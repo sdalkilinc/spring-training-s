@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/spring-05-Core-Abstraction/target/classes" />
+    <output-test url="file://$MODULE_DIR$/spring-05-Core-Abstraction/target/test-classes" />
+    <content url="file://$MODULE_DIR$/spring-05-Core-Abstraction">
+      <sourceFolder url="file://$MODULE_DIR$/spring-05-Core-Abstraction/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/spring-05-Core-Abstraction/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/spring-05-Core-Abstraction/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/spring-05-Core-Abstraction/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.22" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
+  </component>
+</module>
