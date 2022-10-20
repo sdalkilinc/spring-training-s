@@ -5,16 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.cydeo</groupId>
-    <artifactId>spring-training-sumeye</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>spring-04-Autowiring</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>spring-05-Core-Abstraction</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.22</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+        </dependency>
+    </dependencies>
 
 </project>
