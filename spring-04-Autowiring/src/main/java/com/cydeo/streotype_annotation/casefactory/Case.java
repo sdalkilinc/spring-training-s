@@ -9,9 +9,9 @@ public abstract class Case {
     private String model;
     private String manufacturer;
     private String powerSupply;
-
-    @Autowired
+    @Autowired//If you have a constructor, we don't need to add @Autowired anymore
     private Dimensions dimensions;
+
 
     public Case(String model, String manufacturer, String powerSupply) {
         this.model = model;
