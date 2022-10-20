@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-02-Core-IoC-Stereotype-Annotation" />
+        <module name="spring-04-Autowiring (1)" />
         <module name="spring-03-Wiring" />
         <module name="spring-04-Autowiring" />
         <module name="spring-06-Core-BeanScope" />
@@ -16,10 +17,6 @@
         <module name="spring-05-Core-Abstraction" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-05-Core-Abstraction" target="11" />
-      <module name="spring-training-sumeye" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
