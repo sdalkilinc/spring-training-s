@@ -8,6 +8,7 @@ public class StudentController {
 
     @RequestMapping("/welcome")
     public String homePage(){
-
+        String name = "ABC";
+        return "student/welcome";
     }
 }
