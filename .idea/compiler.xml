@@ -19,10 +19,6 @@
         <module name="spring-08-MVC-Controller" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-05-Core-Abstraction" target="11" />
-      <module name="spring-training-sumeye" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
