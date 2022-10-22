@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @RequestMapping("/home")  //for creating en point, we need request mapping
-    public String home(){
+    public String getHomePage(){
         return "home.html";
     }
 
