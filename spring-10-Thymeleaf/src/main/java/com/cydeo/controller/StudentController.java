@@ -1,6 +1,8 @@
 package com.cydeo.controller;
 
+import com.cydeo.bootstrap.DataGenerator;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -10,10 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StudentController {
 
     @RequestMapping("/register") //localhost:8080/student/register
-    public String register(){
+    public String register(Model model){
+//If you want to see some objects in here, we need to call Model class inside the method
+
+        model.addAttribute("students", DataGenerator.createStudent());
 
         return "student/register";
-
     }
 
     @RequestMapping("/drop") //localhost:8080/student/drop
