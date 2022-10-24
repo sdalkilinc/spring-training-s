@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/student")
-//if you put @RequestMapping in the class level, then it is concatenate
+// @PostMapping and @GetMapping are not applicable for class level
+//if you put @RequestMapping in the class level, then it is concatenated
 //and we don't need to put "/student" in the method level before the end point that we determine
 public class StudentController {
 
