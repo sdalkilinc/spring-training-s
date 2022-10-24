@@ -27,9 +27,8 @@ public class MentorController {
 
     @PostMapping("/confirm")
     public String submitForm(){
-        return "mentor/mentor-confirmation";
+        return "mentor/mentor-confirmation"; //this is the html page's name
     }
-
 
 
 }
