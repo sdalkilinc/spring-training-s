@@ -21,10 +21,10 @@ public class StudentController {
         return "student/register";
     }
 
-    @RequestMapping("/welcome") //localhost:9090/student/welcome
-    public String welcome(@RequestParam int id){
+    @RequestMapping("/welcome") //localhost:9090/student/welcome?id=3
+    public String welcome(@RequestParam String name){
 
-        System.out.println(id);
+        System.out.println(name);
         return "student/welcome";
 
     }
