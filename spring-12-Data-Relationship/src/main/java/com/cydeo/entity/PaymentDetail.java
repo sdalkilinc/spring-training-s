@@ -28,4 +28,7 @@ public class PaymentDetail {
         this.commissionAmount = commissionAmount;
         this.payoutDate = payoutDate;
     }
+
+
+
 }
