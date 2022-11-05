@@ -15,7 +15,7 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "studentFirstName")
+    @Column(name = "studentFirstName") //to change column name
     private String firstName;
     @Column(name = "studentLastName")
     private String lastName;
@@ -31,5 +31,10 @@ public class Student {
     @Enumerated(EnumType.STRING)
 //    @Enumerated(EnumType.ORDINAL)
     private Gender gender;
+
+    @Transient //if you don't want to display any column in the table, use this annotation
+    private String city;
+
+
 
 }
