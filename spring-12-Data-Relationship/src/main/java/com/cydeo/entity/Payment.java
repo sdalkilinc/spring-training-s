@@ -28,6 +28,8 @@ public class Payment {
 
 //    @OneToOne(cascade = CascadeType.ALL)
     @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    //when we do any changes in the parent class, if we want to apply it in the child class
+    // then we need to use Cascade
     @JoinColumn(name = "payment_detail_id")
     private PaymentDetail paymentDetail;
 
