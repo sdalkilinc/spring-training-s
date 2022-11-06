@@ -7,12 +7,10 @@ import lombok.NoArgsConstructor;
 import net.bytebuddy.asm.Advice;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -31,6 +29,11 @@ public class Movie extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private MovieState state;
     private BigDecimal price;
+    @ManyToMany
+    @JoinTable(name = "movie_genre_rel",
+    joinColumns = @JoinColumn(name = "movie_id"),
+    inverseJoinColumns = @JoinColumn(name = "genre_id"))
+    private List<Genre> genreList;
 
 
 
