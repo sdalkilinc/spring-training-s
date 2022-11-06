@@ -31,13 +31,11 @@ public class Movie extends BaseEntity{
     private BigDecimal price;
     @ManyToMany
     @JoinTable(name = "movie_genre_rel",
-    joinColumns = @JoinColumn(name = "movie_id"),
-    inverseJoinColumns = @JoinColumn(name = "genre_id"))
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "genre_id"))
     private List<Genre> genreList;
 
-
-
-
-
+    //if you need to create an object, then create constructor
+    //if the data comes with SQL, we don't need constructor
 
 }
