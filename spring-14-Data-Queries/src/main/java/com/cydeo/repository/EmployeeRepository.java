@@ -1,5 +1,6 @@
 package com.cydeo.repository;
 
+import com.cydeo.entity.Department;
 import com.cydeo.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -47,6 +48,50 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     @Query("select e.salary from Employee e WHERE e.email='amcnee1@google.es'")
     Integer retrieveEmployeeSalary();
+
+    //Not equal
+    @Query("select e from Employee e where e.salary <> ?1")
+    List<Employee> retrieveEmployeeSalaryNotEqual(int salary);
+
+    //Like / Contains / Startswith / Endswith
+    @Query("select  e from Employee e where e.firstName like ?1")
+    List<Employee> retrieveEmployeeFirstNameLike(String pattern);
+
+    //Less Than
+    @Query("select e from Employee e where e.salary < ?1")
+    List<Employee> retrieveEmployeeSalaryLessThan(int salary);
+
+    //Greater Than
+    @Query("select e.firstName  from Employee e where e.salary > ?1")
+    List<String> retrieveEmployeeSalaryGreaterThan(int salary);
+
+    //Between
+    @Query("select e from Employee e where e.salary between ?1 and ?2")
+    List<Employee> retrieveEmployeeSalaryBetween(int salary, int salary2);
+
+    //Before
+    @Query("select e from Employee e where e.hireDate > ?1")
+    List<Employee> retrieveEmployeeHireDateBefore(LocalDate date);
+
+    //Null
+    @Query("select e from  Employee e where e.email is null ")
+    List<Employee> retrieveEmployeeEmailIsNull();
+
+    //Not Null
+    @Query("select e from  Employee e where e.email is not null ")
+    List<Employee> retrieveEmployeeEmailIsNotNull();
+
+    //Sorting in asc order
+    @Query("select e from Employee e order by e.salary")
+    List<Employee> retrieveEmployeeSalaryAscOrder();
+
+    //Sorting in desc order
+    @Query("select e from Employee e order by e.salary desc ")
+    List<Employee> retrieveEmployeeSalaryDesOrder();
+
+    //Native Query
+    @Query(value = "select * from employees where salary =?1", nativeQuery = true)
+    List<Employee> retrieveEmployeeDetailBySalary(int salary);
 
 
 }
