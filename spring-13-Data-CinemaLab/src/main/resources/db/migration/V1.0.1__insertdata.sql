@@ -94,7 +94,7 @@ INSERT INTO movie_cinema (date_time, cinema_id, movie_id) VALUES
                                                               ('2020-12-08 22:00:00', (SELECT c.id FROM cinema c WHERE c.name = 'Hall 4 - EMPIRE'), (SELECT m.id FROM movie m WHERE m.name = 'The Loss Adjuster'));
 
 INSERT INTO account_details (address, age, city, country, name, postal_code, role, state) VALUES
-                                                                                              ('262  Lochmere Lane', 35, 'LOUISVILLE', 'United States', 'Josie D Story', '40289', 'USER' , 'Kentucky'),
+                                                                                              ('262  Lochmere Lane', 35, 'LOUISVILLE', 'United States', 'Josie D Story', '40289', 'ADMIN' , 'Kentucky'),
                                                                                               ('2903  Jarvis Street', 28, 'Buffalo', 'United States', 'Bernard P Fendley', '14211', 'USER' , 'New York'),
                                                                                               ('4161  Alfred Drive', 47, 'Brooklyn', 'United States', 'Faith R Parsons', '11226', 'USER' , 'New York'),
                                                                                               ('2587  Logan Lane', 47, 'HOLTSVILLE', 'United States', 'Johnnie J Cannon', '00544', 'USER' , 'New York'),
