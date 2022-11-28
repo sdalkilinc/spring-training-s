@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class Spring17RestConsumeApisApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(Spring17RestConsumeApisApplication.class, args);
     }
 
