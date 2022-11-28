@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController //@Controller + @ResponseBody
 @RequestMapping("/courses/api/v1")
 public class CourseController {
 
@@ -47,6 +47,7 @@ public class CourseController {
     public void deleteCourseById(@PathVariable("id") long courseId){
         courseService.deleteCourseById(courseId);
     }
+
 
 
 
