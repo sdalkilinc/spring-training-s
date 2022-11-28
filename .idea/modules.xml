@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-13-Data-CinemaLab/spring-13-Data-CinemaLab.iml" filepath="$PROJECT_DIR$/spring-13-Data-CinemaLab/spring-13-Data-CinemaLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-14-Data-Queries/spring-14-Data-Queries.iml" filepath="$PROJECT_DIR$/spring-14-Data-Queries/spring-14-Data-Queries.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-15-REST/spring-15-REST.iml" filepath="$PROJECT_DIR$/spring-15-REST/spring-15-REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-16-REST-Jackson/spring-16-REST-Jackson.iml" filepath="$PROJECT_DIR$/spring-16-REST-Jackson/spring-16-REST-Jackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-training-sumeye.iml" filepath="$PROJECT_DIR$/.idea/spring-training-sumeye.iml" />
     </modules>
   </component>
