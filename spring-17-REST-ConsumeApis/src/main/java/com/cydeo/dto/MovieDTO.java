@@ -1,6 +1,7 @@
 package com.cydeo.dto;
 
 import com.cydeo.enums.MovieState;
+import com.cydeo.enums.MovieType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
