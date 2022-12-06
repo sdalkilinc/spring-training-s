@@ -1,5 +1,6 @@
 package com.cydeo.dto;
 
+import com.cydeo.enums.UserRole;
 import lombok.*;
 
 @Data

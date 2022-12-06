@@ -25,9 +25,8 @@ public class Consume_WebClient {
         this.genreService = genreService;
     }
 
-    @GetMapping("/flux-movie-cinemas")
+    @GetMapping("/flux-movie-cinemas")  //localhost:8080/flux-movie-cinemas
     public Flux<MovieCinemaDTO> readAllCinemaFlux(){
-        //Flux is used for more than one object.
 
         return Flux.fromIterable(movieCinemaService.findAll());
 
