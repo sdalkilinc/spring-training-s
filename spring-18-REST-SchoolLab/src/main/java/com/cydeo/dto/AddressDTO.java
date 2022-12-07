@@ -15,7 +15,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_NULL) //This annotations says that in my Json, only include to "not null ones"
 public class AddressDTO {
 
     @JsonIgnore
@@ -38,6 +38,6 @@ public class AddressDTO {
     @JsonBackReference(value = "teacher-address-reference")          // defaultReference
     private TeacherDTO teacher;
 
-    private Integer currentTemperature;     // Weather information, which we will later get it from 3rd party API
+    private Integer currentTemperature; // Weather information, which we will later get it from 3rd party API
 
 }

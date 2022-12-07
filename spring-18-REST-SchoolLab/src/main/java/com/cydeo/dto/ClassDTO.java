@@ -17,6 +17,7 @@ import lombok.Setter;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ClassDTO {
 
+
     @JsonIgnore
     private Long id;
 
