@@ -1,4 +1,5 @@
 package com.cydeo.model;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

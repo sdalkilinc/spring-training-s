@@ -1,4 +1,5 @@
 package com.cydeo.controller;
+
 import com.cydeo.model.License;
 import com.cydeo.service.LicenseService;
 import org.springframework.http.HttpStatus;

@@ -20,6 +20,7 @@ public class LicenseServiceImpl implements LicenseService {
         this.feignClient = feignClient;
     }
 
+
     public License getLicense(Long licenseId, Long organizationId) throws Exception {
 
         License license = licenseRepository.findById(licenseId).orElseThrow(() -> new Exception("License not found"));
