@@ -1,5 +1,4 @@
 package com.cydeo.config;
-
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.keycloak.adapters.springsecurity.account.SimpleKeycloakAccount;

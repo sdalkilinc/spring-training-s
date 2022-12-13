@@ -1,5 +1,4 @@
 package com.cydeo.client;
-
 import com.cydeo.model.Organization;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
