@@ -28,13 +28,34 @@ public class LoggingAspect {
 //    public void log(){
 //        logger.info("Info log.............");
 //    }
+//
+//    @Pointcut("execution(* com.cydeo.repository.CourseRepository.findById(*))")
+//    public void courseRepositoryFindByIdPC(){}
+//
+//    @Before("courseRepositoryFindByIdPC()")
+//    public void beforeCourseRepositoryFindById(JoinPoint joinPoint){
+//        logger.info("Before -> Method: {}, Arguments: {}, Target: {} ",
+//                joinPoint.getSignature(), joinPoint.getArgs(), joinPoint.getTarget());
+//    }
+//
+//    @Pointcut("within(com.cydeo.controller..*)")
+//    public void anyControllerOperation(){}
+//
+//    @Pointcut("@within(org.springframework.stereotype.Service)")
+//    public void anyServiceOperation(){}
+//
+//    @Before("anyControllerOperation() || anyServiceOperation()")
+//    public void beforeControllerOrServiceAdvice(JoinPoint joinPoint){
+//                logger.info("Before -> Method: {}, Arguments: {}, Target: {} ",
+//                joinPoint.getSignature(), joinPoint.getArgs(), joinPoint.getTarget());
+//    }
 
-    @Pointcut("execution(* com.cydeo.repository.CourseRepository.findById(*))")
-    public void courseRepositoryFindByIdPC(){}
+    @Pointcut("@annotation(org.springframework.web.bind.annotation.DeleteMapping)")
+    public void anyDeleteControllerOperation(){}
 
-    @Before("courseRepositoryFindByIdPC()")
-    public void beforeCourseRepositoryFindById(JoinPoint joinPoint){
-        logger.info("Before -> Method: {}, Arguments: {}, Target: {} ",
+    @Before("anyDeleteControllerOperation()")
+    public void beforeDeleteMappingAnnotation(JoinPoint joinPoint){
+                logger.info("Before -> Method: {}, Arguments: {}, Target: {} ",
                 joinPoint.getSignature(), joinPoint.getArgs(), joinPoint.getTarget());
     }
 
