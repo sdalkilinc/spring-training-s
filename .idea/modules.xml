@@ -26,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-20-REST-Security-Keycloak-LicenseApp/spring-20-REST-Security-Keycloak-LicenseApp.iml" filepath="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-LicenseApp/spring-20-REST-Security-Keycloak-LicenseApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-20-REST-Security-Keycloak-OrganizationsApp/spring-20-REST-Security-Keycloak-OrganizationsApp.iml" filepath="$PROJECT_DIR$/spring-20-REST-Security-Keycloak-OrganizationsApp/spring-20-REST-Security-Keycloak-OrganizationsApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-21-AOP/spring-21-AOP.iml" filepath="$PROJECT_DIR$/spring-21-AOP/spring-21-AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" filepath="$PROJECT_DIR$/spring-22-UnitTesting-JUnit5/spring-22-UnitTesting-JUnit5.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-training-sumeye.iml" filepath="$PROJECT_DIR$/.idea/spring-training-sumeye.iml" />
     </modules>
   </component>
