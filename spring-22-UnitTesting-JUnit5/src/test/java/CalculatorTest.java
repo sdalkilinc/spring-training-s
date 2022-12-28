@@ -11,9 +11,9 @@ class CalculatorTest {
 
     @Test
     void testCase1(){
-        System.out.println("Test Case 1");
+//        System.out.println("Test Case 1");
+        fail("Not implemented yet.");
     }
-
     @Test
     void testCase2(){
         System.out.println("Test Case 2");
