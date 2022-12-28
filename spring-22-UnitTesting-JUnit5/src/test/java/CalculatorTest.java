@@ -7,26 +7,38 @@ class CalculatorTest {
     @Test
     void add() {
         System.out.println("Add method");
+        int actual = Calculator.add(2, 3);
+        assertEquals(5, actual, "Test failed");
     }
 
     @Test
     void testCase1(){
 //        System.out.println("Test Case 1");
-        fail("Not implemented yet.");
+        fail("Not implemented yet");
     }
     @Test
     void testCase2(){
         System.out.println("Test Case 2");
+        assertEquals("add", Calculator.operator); //this method and the one below are same
+        assertTrue(Calculator.operator.equals("add"));
+
     }
 
     @Test
     void testCase3(){
         System.out.println("Test Case 3");
+        assertArrayEquals(new int[]{1,2,3}, new int[]{1,2,3}, "Arrays are not same");
     }
 
     @Test
     void testCase4(){
         System.out.println("Test Case 4");
+
+        String nullString = null;
+        String notNullString = "Cydeo";
+
+//        assertNull(nullString);
+        assertNotNull(notNullString);
     }
 
     @Test
